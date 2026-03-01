@@ -1,0 +1,21 @@
+{
+  "name": "C++ MySQL Project Handson6",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "C_Cpp.default.cppStandard": "c++17"
+      },
+      "extensions": [
+        "ms-vscode.cpptools-extension-pack",
+        "editorconfig.editorconfig",
+        "cweijan.vscode-mysql-client2"
+      ]
+    }
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y libmysqlcppconn-dev"
+}
