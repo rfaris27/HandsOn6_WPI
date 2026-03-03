@@ -11,7 +11,7 @@ int main()
     try
     {
         sql::mysql::MySQL_Driver *driver;
-        sql::Connection *con;s
+        sql::Connection *con;
 
         driver = sql::mysql::get_mysql_driver_instance();
         // Host is "db" because we are inside the container network
